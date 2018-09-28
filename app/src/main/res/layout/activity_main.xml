@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.HelloRelative.MainActivity">
+
+    <Button
+        android:id="@+id/Button_Toast"
+        android:layout_width="102dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:onClick="showToast"
+        android:text="@string/button_label_toast"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/Show_Count"
+        android:layout_width="150dp"
+        android:layout_height="311dp"
+        android:layout_alignTop="@+id/Button_Toast"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="2"
+        android:background="@color/bgcolor"
+        android:gravity="center"
+        android:text="@string/count_initial_value"
+        android:textColor="@color/colorPrimary"
+        android:textSize="200sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/Button_Toast"
+        android:layout_toEndOf="@id/Button_Toast"/>
+
+    <Button
+        android:id="@+id/Button_Count"
+        android:layout_width="102dp"
+        android:layout_height="67dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="57dp"
+        android:background="@color/colorPrimary"
+        android:onClick="countup"
+        android:text="@string/button_label_count"
+        android:textColor="@color/white"
+        android:layout_below="@id/Button_Toast"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>
